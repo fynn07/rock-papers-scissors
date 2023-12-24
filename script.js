@@ -1,7 +1,24 @@
-function logit(String){
-    console.log(String);
+
+function playRound(){
+
 }
 
-logit("hello world its me");
+function playerSelection(){
+    
+}
 
-function
+function getComputerChoice(){
+    let computer_choice = Math.floor(Math.random() * 3);
+    let opponent;
+    if(computer_choice === 0){
+        opponent = "rock";
+    }
+    else if(computer_choice === 1){
+        opponent = "paper";
+    }
+    else{
+        opponent = "scissors";
+    }
+    return opponent;
+}
+console.log(getComputerChoice());
